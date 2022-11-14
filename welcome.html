@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+          
+        }
+        .insert{
+            width: 100%;
+            background-color: white;
+            height:auto ;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 4%;
+            margin-right: 4%;
+            text-align: center;
+        }
+        .welcome{
+            color: #FAC710;
+            font-size: 50px;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .name{
+            color: #0C1D36;
+            font-weight: bold;
+            margin-top: 30px;
+                }
+        .quiz-describe{
+            width: 85%;
+            color: #0C1D36;
+        }
+        .parts{
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+        }
+        .parts div{
+            width:calc(80%/3);
+            border-radius: 10PX;
+            padding-left: 1%;
+            padding-right: 1%;
+    
+        }
+        .part1{
+            background-color: white;
+            border: 2px solid #FAC710;
+            color: 21325E;
+        }
+        .part2{
+            background-color: #21325E;
+            color: white;
+        }
+        .part3{
+            background-color: white;
+            border: 2px solid #FAC710;
+            color: 21325E;
+        }
+        
+        .next{
+            background-color: #FAC710;
+            color: #0C1D36;
+            height:70PX;
+            border-radius: 10px;
+            margin-top: 70px;
+            margin-bottom: 50px;
+            width: 250PX;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+        .next:active{
+            border: 4px solid  #FAC710;
+        }
+        .footer1{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #E2DED3;
+        }
+        .footer2{
+            width: 85%;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            justify-content:space-around;
+        }
+        .footer2 img{
+            height: 20px;
+            width: 20px;
+        }
+        * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+   }
+  
+   
+   
+    
+        @media only screen and (min-device-width:0px) and (max-device-width :480px){
+            .insert{
+                height: auto;
+            }
+            .parts{
+                flex-direction: column;
+                align-items: center;
+            }
+            .parts div {
+            width: calc(85%);
+            padding: 3%;
+            margin-bottom: 20px;
+            }
+            .next{
+                width: 180PX;
+            }
+
+        }
+        @media only screen and (min-device-width :481px) and (max-device-width :768px){
+            .insert{
+                height: auto;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8b56cb52b.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body style="background-color:white ;">
+    <nav>
+        <div id="LogoDiv">
+          <img src="/img/java-script.png" id="Logo"><span id="TextLogo">Master</span>
+        </div>
+        <div id="NavContents" style="width: 10%;">
+            <Button  onclick="location.href='/home.html'">Log OUT</Button>
+            <i class="fas fa-bars" onclick="showlist()"></i>
+             <div id="List">
+              <div class="Item">log out</div>
+             </div>
+        </div>
+      </nav>
+     
+<div class="main" >
+<div class="insert">
+    <div><h1 class="welcome">Welcome!</h1><br>
+        <h1 id="name-wel" class="name"> </h1></div><br>
+    <div class="quiz-describe"><p>
+        We are so excited to meet you Faten Kasasbeh! To get started, please solve this multi-part Quiz!<br>
+    All Quizzes consist off Several multi-choice questions </p></p></div>
+        <br>
+        <br>
+        <div class="parts">
+            <div class="part1"><span>Imitate</span>
+                <br>
+                <br>
+                The First Part of the Quiz will consist of 4 Simple questions that will take you right to the Basics!
+            </div>
+            <div class="part2"><span>Adapt</span>
+                <br>
+                <br>
+                The Second Part is a standard 6-question quiz that will test your Abilities!
+                
+            </div>
+            <div class="part3"><span>Transpose</span>
+                <br>
+                <br>
+               The Third and final part of the Quiz is 10-question quiz that demands critical thinking and will put your entire JS knowledge to the test!
+            </div>
+        </div>
+        <button class="next"  onclick="location.href='/imitate/imitation.html'">Start QUIZ</button>
+</div>
+</div>
+</div>
+<div class="footer1">
+    <div class="footer2">
+    <div> <a><img src="/img/phone.png"> +96278888888</a></div>
+    <div>  <img src="/img/email.png"> Mail : masterjs@company.com</div>
+    <div> <a style="text-decoration:none ;" href="https://www.linkedin.com/"><img src="/img/linkedin.png"> Masterjs.linkedin</a></div>
+    <div><a style="text-decoration:none ;" href="https://github.com/"><img src="/img/github.png"> Masterjs.github</a></div>
+</div>
+<script src="/regist/registration.js"></script>
+</body>
+</html>

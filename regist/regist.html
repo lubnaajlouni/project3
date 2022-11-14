@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="registration.css" />
+    <link rel="stylesheet" href="/Navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <nav>
+      <div id="LogoDiv">
+        <img src="/img/java-script.png" id="Logo"><span id="TextLogo">Master</span>
+      </div>
+    </nav>
+    <div id="reg-main">
+      <div id="Alimage">
+        <div id="img-area"></div>
+      </div>
+
+      <div id="reg-form">
+    <div>  <h1>Register</h1></div>  
+       
+        <div class="input-div">
+          <div class="input-align">
+    
+            <input type="text" class="reg-input" id="fname" placeholder="Enter Your First Name" />
+
+           
+            <input type="text" class="reg-input" id="lname" placeholder="Enter Your Last Name"/>
+          </div>
+          <div class="input-align">
+          
+            <input type="email" class="reg-input" id="email" placeholder="Enter Your E-mail "/>
+
+          
+            <input type="tel" class="reg-input" id="phone"  placeholder="Enter Your Phone Number"/>
+          </div>
+          <div class="input-align">
+            <input type="password" class="reg-input" id="password" placeholder="Enter password" />
+
+            <input type="password" class="reg-input" id="confirm" placeholder="Confirm Password"/>
+          </div>
+          <div class="input-check">
+            <div class="check">
+                <input type="checkbox" />
+                <label for="">Subscribe to our newsletter</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" />
+                <label for="">I agree with all statments in Terms of service</label>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <div id="reg-btn-div">
+          <button type="submit" id="reg-btn"   onclick="validates(); location.href='log.html';">
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="/regist/registration.js"></script>
+</body>
+</html>

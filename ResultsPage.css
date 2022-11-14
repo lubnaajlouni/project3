@@ -1,0 +1,147 @@
+:root {
+    --blue: #d2e6fe;
+    --pink: #FFE3E2;
+    --green: #d9ffe5;
+    --yellow:#FEF0D5;
+    --grey:#e6e6e6;
+    --darkgreen:#2ACD70;
+    --darkpink:#F2ACAF;
+    --darkblue:#414BB2;
+    --lightgray:#21325E;
+    --yellow:#FAC710;
+    --red:#F24726;
+    --darkred:#771505;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+ }
+ body{
+    background-color: var(--grey);
+ }
+.Main{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+ }
+.Title{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+ }
+.Card{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: 5px solid var(--darkgreen);
+  box-shadow: 7px 7px 7px 7px var(--green);
+  width: 80%;
+  height: 800px;
+  background-color: whitesmoke;
+}
+.Circle{
+    border: #2c6c42 2px solid;
+    height: 250px;
+    width: 250px;
+    background-color: var(--darkgreen);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:whitesmoke;
+    font-size: 200px;
+}
+.Card .Mark p{
+    font-size: 45px;
+    font-weight: bolder;
+}
+.SubTitle{
+    font-size: 45px;
+    font-weight: bold;
+}
+.Percent{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Btns{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+button{
+    width: 250px;
+    height: 60px;
+    background-color: var(--green);
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: var(--darkgreen);
+    color: whitesmoke;
+}
+@media only screen and (max-width:480px) {
+    .Btns{
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+    .Title h1{
+        width: 100%;
+        height: 100px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .Percent{
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        height: 28px;
+    }
+    .Circle{
+        height: 125px;
+        width: 125px;
+        font-size: 100px;
+    }
+    .Card .Mark p{
+      font-size: 28px;
+    }
+    button{
+        height: 40px;
+        width: 200px;
+        font-size: 18px;
+    }
+    .SubTitle{
+        font-size: 20px;
+    }
+  
+    .Title{
+        width: 80%;
+        height: 100px;
+        align-items: flex-end;
+    }
+    
+}
+@media only screen and (min-device-width:481px) and (max-device-width:769px) {
+    .Btns{
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+    .Title{
+        width: 80%;
+        height: 100px;
+    }
+
+}

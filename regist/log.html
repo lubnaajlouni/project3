@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Navbar.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<style>
+.larg{width:95%;
+     
+     padding:2% 3%;}
+
+.main{  
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.one{background-color: white;
+    width: 100%;
+    height:543px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .butt{
+       width:60%; background-color: #FAC710; 
+        font-weight: bold; 
+         height: 10%; 
+         border-radius: 9px; 
+        font-size: large;
+    }
+    .butt:hover{
+        background-color: #1F4690;
+        color: white;
+    }
+.two{  background-color: white; 
+width: 100%;  
+}
+.img{ width:90%; margin-top: 8%; }
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px){
+
+.main{flex-direction: column-reverse;}
+.one{height: 550px; padding-top: 4%;}
+.two{height:500px;width:100%; }
+.img{ width: 90%; margin-top: 5%;}
+}
+
+
+
+@media only screen and (min-device-width: 0) and (max-device-width: 480px){
+.main{flex-direction: column-reverse; height: 1000px; }
+.larg{width:100%;  height: 100%;  }
+.one{height: 700px;}
+.two{height: 400px; width: 295px;}
+.img{margin-top: 40%;}
+}
+</style>
+</head>
+
+<body style="background-color:white ;">
+    <nav>
+        <div id="LogoDiv">
+          <img src="/img/java-script.png" id="Logo"><span id="TextLogo">Master</span>
+        </div>
+        <div id="NavContents">
+        </div>
+      </nav>
+<div class="larg">
+<div class="main">
+ <div class="one">
+    <h1>Login Form</h1><br>
+   <input type="text" id="user" name="user name" placeholder="    user name" style="width:60%; height:9%;  border-radius: 9px; font-size: x-large;" > <br> <br><br>
+
+   <input type="password" id="password1" name="password" placeholder="    password" style="width:60%;  height: 9%;  border-radius: 9px;  font-size: x-large;"> <br><br><br>
+
+   <div><input id="Remember" type="checkbox" > 
+   <label for="Remember" style="font-weight:bold;">Remember me</label> <br><br>
+</div>
+   <button class="butt" onclick="Log()">Login</button> <br> <br>
+
+   <h3 style="font-size:large; font-size: x-large">Don't have account? <span style="color: #1972D0;"><a href="regist.html">signup </a> </span></h3> 
+ </div>
+
+ <div class="two"><img class="img" src="/img/img.jpg"  alt="img"></div>
+</div>
+
+</div>
+
+
+<script src="/regist/registration.js">  </script>
+
+    
+</body>
+</html>

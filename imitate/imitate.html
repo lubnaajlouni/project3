@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Master</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Navbar.css">
+  </head>
+  <body>
+    <nav>
+      <div id="LogoDiv">
+        <img src="/img/java-script.png" id="Logo"><span id="TextLogo">Master</span>
+      </div>
+      <div id="NavContents" style="width: 10%;">
+        <Button  onclick="location.href='/home.html'">Log OUT</Button>
+          <i class="fas fa-bars" onclick="showlist()"></i>
+           <div id="List">
+            <div class="Item">log out</div>
+           </div>
+      </div>
+    </nav>
+    <div class="main-div">
+      <div id="header"><h1>Imitate</h1></div>
+      <div class="inner-div">
+        <h2 class="question">Question comes here</h2>
+        <ul>
+          <li>
+            <input
+              type="radio"
+              name="answer"
+              id="ans1"
+              class="answer"
+              value=""
+            />
+            <label for="ans1" id="option1">Answer Option</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="ans2" class="answer" />
+            <label for="ans2" id="option2">Answer Option</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="ans3" class="answer" />
+            <label for="ans3" id="option3">Answer Option</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="ans4" class="answer" />
+            <label for="ans4" id="option4">Answer Option</label>
+          </li>
+        </ul>
+        <button id="submit">Next</button>
+        <button id="finish">Finish</button>
+      </div>
+    </div>
+    <script src="/imitate/imitate.js"></script>
+  </body>
+</html>

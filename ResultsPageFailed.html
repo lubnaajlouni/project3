@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8b56cb52b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ResultsPageFailed.css">
+    <link rel="stylesheet" href="Navbar.css">
+    <title>Test Results</title>
+</head>
+<body>
+  <nav>
+    <div id="LogoDiv">
+      <img src="/img/java-script.png" id="Logo"><span id="TextLogo">Master</span>
+    </div>
+    <div id="NavContents" style="width: 10%;">
+      <Button  onclick="location.href='/home.html'">Log OUT</Button>
+        <i class="fas fa-bars" onclick="showlist()"></i>
+         <div id="List">
+          <div class="Item">log out</div>
+         </div>
+    </div>
+  </nav>
+    <div class="Main">
+      <div class="Title">
+      <h1>Unfortunately,You did not fulfill our Requierments. Good Luck!</h1>
+      </div>
+      <div class="Card">
+        <div class="SubTitle">
+        <p>Sorry!</p>
+        </div>
+        <div class="Circle">        
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="Mark">
+         <p id="failed"></p>
+        </div>
+        <div class="Percent">
+          <p>You Answered <span id="percent"></span> %  of Questions Correct</p>
+          <p>Better Luck Next Time</p>
+        </div>
+        <div class="Btns">
+          <button onclick="location.href='result.html'">Show Results</button> 
+          <button onclick="location.href='home.html'">Back To Home Page</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      var score=localStorage.getItem("score") ;
+      document.getElementById("failed").innerHTML = score + " / 20";
+      document.getElementById("percent").innerHTML=(score * 5)
+    </script>
+</body>
+</html>

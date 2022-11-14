@@ -1,0 +1,84 @@
+body{
+    box-sizing: border-box;
+}
+
+.main-div{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+justify-content: center;    background-color: white;
+align-items: center;
+box-sizing: border-box;
+}
+#header{
+    font-size: 28px;
+}
+.inner-div{
+    width: 80%;
+    height: 450px;
+    border: 10px solid rgb(52, 76, 183);
+    border-radius: 15px;
+    background-color: white;
+    margin: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 10px 5px rgba(52, 76, 183,0.4);
+    list-style-type: none;
+
+}
+
+.inner-div h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.inner-div li {
+    font-size: 20px;
+    list-style: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid rgb(52, 76, 183);
+    width: 500px;
+}
+
+.inner-div li:hover{
+    background-color: #FAC710;
+}
+
+input {
+    cursor: pointer;
+}
+
+#submit{
+    background-color: #FAC710;
+    padding: 10px 30px;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-size: 15px;
+    border: none;
+    text-transform: uppercase;
+}
+
+#submit:hover{
+    background-color: rgb(52, 76, 183);
+    color: white;
+}
+#finish{
+    background-color: #FAC710;
+    padding: 10px 30px;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-size: 15px;
+    border: none;
+    text-transform: uppercase;
+}
+
+#finish:hover{
+    background-color: rgb(52, 76, 183);
+    color: white;
+}

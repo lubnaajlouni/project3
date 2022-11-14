@@ -1,0 +1,137 @@
+/* :root {
+  --blue: #d2e6fe;
+  --pink: #FFE3E2;
+  --green: #d9ffe5;
+  --yellow:#FEF0D5;
+  --grey:#e6e6e6;
+  --darkgreen:#2ACD70;
+  --darkpink:#F2ACAF;
+  --darkblue:#414BB2;
+  --lightgray:#21325E;
+  --yellow:#FAC710;
+  --red:#F24726;
+  --darkred:#771505;
+} */
+body{
+  background-color: #1F4690;
+}
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Nunito', sans-serif;
+}
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  flex-direction: column;
+}
+.Circle span {
+  color: #3345b2
+  ;
+  font-size: 80px;
+}
+.Circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px #FAC710 solid;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+  position: absolute;
+  top: 60px;
+  background-color: whitesmoke;
+}
+.Brief{
+  border: 5px #FAC710 solid;
+  border-radius: 100px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  height: 500px;
+  width: 80%;
+  margin-top: 10px;
+  padding-top: 20px;
+}
+.Descrip{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+#StartQuizBtn{
+  width: 200px;
+  height: 60px;
+  background-color:#FAC710;
+  color: #21325E;
+  font-size: 25px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+#StartQuizBtn:hover{
+  background-color: #21325E;
+  color: whitesmoke;
+}
+h2{
+  font-size: 30px;
+}
+@media only screen and (min-device-width:481px) and (max-device-width:700px){
+  .Brief{
+    justify-content: space-evenly;
+  }
+  .Descrip{
+    font-size: 15px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  span{
+    font-size: 60px;
+  }
+  .Circle{
+    height: 100px;
+    width: 100px;
+  }
+  #StartQuizBtn{
+    width: 100px;
+  }
+
+}
+@media only screen and (max-device-width:480px) {
+  .Brief{
+    justify-content: center;
+  }
+  .Descrip{
+    font-size: 15px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  span{
+    font-size: 60px;
+  }
+  .Circle{
+    height: 100px;
+    width: 100px;
+  }
+  #StartQuizBtn{
+    width: 100px;
+  }
+
+}
+ 

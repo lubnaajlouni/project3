@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Navbar.css">
+    <style>
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Nunito', sans-serif;
+}
+#Logo{
+    height: 50px;
+    width: 50px;
+}
+#LogoDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+}
+nav{
+    background-color:#21325E ;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+#TextLogo{
+    font-size: 35px;
+    color: #FAC710;
+}
+#NavContents{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    font-size: 25px;
+    color: whitesmoke;
+}
+#NavContents button{
+    font-size: 25px;
+    color: whitesmoke;
+    background-color:#21325E;
+    width: 120px;
+    border-radius: 10px;
+    border: whitesmoke 3px solid;
+}
+#NavContents button:active{
+    border: #FAC710 solid 3px;
+    border-radius: 10px;
+}
+#NavContents span:hover{
+    background-color: #FAC710;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#NavContents span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+#HomeIcon{
+    font-size: 30px;
+    color: #FAC710;
+}
+#NavContents i{
+     display: none;
+     font-size: 50px;
+ }
+#List{
+    top: 70px;
+    right: 0px;
+    height: 225px;
+    width: 300px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    border: #FAC710 4px solid;
+    text-align: center;
+}
+.Item:active{
+    background-color: #FAC710;
+}
+.Item{
+    height: 50px;
+    background-color: #21325E;
+    border: whitesmoke 3px solid;
+
+}
+     @media only screen and (max-device-width:950px) {
+        #NavContents span{
+            display: none;
+        }
+        #NavContents button{
+            display: none;
+        }
+        #NavContents i{
+           display: inline;
+           
+     }
+     nav{
+        justify-content: space-between;
+        width: 100%;
+     }
+     #NavContents{
+        width: 20%;
+     }
+
+     }
+
+     @media only screen and (min-device-width: 0) and (max-device-width: 480px){
+        .mainnum{flex-direction: row;
+        flex-wrap: wrap;
+        }
+
+     }
+
+
+.mainnum{width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.num1{margin-left: 5%;
+    margin-top: 5%;
+padding-bottom:5% ;
+}
+.num2{margin-left: 5%;
+    margin-top: 5%;
+    padding-bottom:5% ;}
+.s{color: rgb(116, 231, 116);}
+    </style>
+</head>
+
+
+<body>
+    <nav>
+        <div id="LogoDiv">
+          <img src="/img/java-script.png" id="Logo"><span id="TextLogo">Master</span>
+        </div>
+        <div id="NavContents" style="width: 10%;">
+          <Button  onclick="location.href='/home.html'">Log OUT</Button>
+            <i class="fas fa-bars" onclick="showlist()"></i>
+             <div id="List">
+              <div class="Item">log out</div>
+             </div>
+        </div>
+      </nav>
+      <script>
+          var flag = true;
+          function showlist(){
+              
+              if(flag){
+              var Burger =document.getElementById("List");
+              Burger.style.display="block";
+              flag = false;
+              }
+              else{
+                  var Burger =document.getElementById("List");
+                 Burger.style.display="none";
+                 flag = true;
+              }
+          }
+      </script>
+
+
+
+    <div class="mainnum">
+    <div class="num1">
+<h2>Imitation level :</h2> <br><br>
+        <div class="b"> - Question (1)What is JavaScript? <br><br>  a web browser <br>
+        <span class="s">a very popular programming language</span> <br>
+        an operating system</div> <br>
+
+        <div> - Question (2) Which command is used to log or write messages to the console? <br><br> <span class="s"> console.log()</span> <br>
+            print()<br>
+             write()</div> <br>
+
+        <div> - Question (3) Select the correct way to send 'Lesson Completed!' to the console <br><br>  console.log(Lesson Completed!) <br>
+            <span class="s">console.log('Lesson Completed!')</span> <br>
+            console.write('Lesson Completed!'</div><br>
+
+        <div> - Question (4) Logical AND (&&) returns true if: <br><br>  If only one of the operands is true <br>
+           <span class="s"> If both operands are true </span><br>
+            If one of the operands is true, but not both</div> <br><br>
+<h2>Adapt level :</h2> <br><br>
+
+        <div> - Question (1)To create a string, we need to put the text inside… <br><br>   / symbols <br>
+            <span class="s"> marks</span> <br>
+                    < string >< /string > tag</div> <br><br>
+
+
+        <div> - Question (2) What is the output of this code? //x=8; x=2; //x=3; console.log(x); <br><br>3  <br>
+          0<br>
+           <span class="s"> 2</span></div> <br>
+
+        <div> - Question (3) In reference to an object, color, height, weight and name are all examples of: <br><br>  nouns <br>
+            <span class="s">properties </span><br>
+            methods</div> <br>
+
+        <div> - Question 4 What do you need to do to create a parameter? <br><br> Use the "param" keyword <br>
+            Use the "var" keyword <br>
+            <span class="s">Write a variable name in the parentheses</span></div> <br>
+
+        <div> - Question 5What built-in property is used to count the number of characters in an object's property? <br><br>  size <br>
+            write <br>
+            <span class="s">length</span></div> <br>
+
+         <div> - Question (6) What keyword is used for creating an instance of an object? <br><br>  var
+            <br> make
+            <br><span class="s">new</span></div> <br>
+
+    </div>
+    <div class="num2">
+    <h2>Transpose level :</h2><br><br>
+        <div> - Question (1) An object's properties are similar to variables; methods are similar to: <br><br> <span class="s"> functions</span> <br>
+            conditionals <br>
+            properties</div> <br>
+    
+            <div> - Question (2) What is the output of the following expression?<br>function multNmbrs(a, b) {<br> var c = a*b; }<br>multNmbrs(2, 6);<br><br> 24<br>
+           12 <br>
+            <span class="s">Nothing</span></div> <br>
+
+   
+            <div> - Question (3) What is the output of the following expression? function multNmbrs(a, b) { var c = a*b; }<br> multNmbrs(2, 6); <br><br> 24 <br>
+                12 <br>
+                <span class="s">Nothing</span></div><br>
+    
+            <div> - Question (4) What is the correct syntax for referring to an external script called "script.js"? <br><br> < script name="script.js" > <br>
+               <span class="s"> < script src="script.js" > </span><br>
+                < script href="script.js" ></div> <br>
+    
+            <div> - Question (5) Which method is used to replace nodes? <br><br> <span class="s"> replaceChild </span><br>
+                replace<br>
+                replaceElements</div> <br>
+    
+            <div> - Question (6)   What is DOM? <br><br><span class="s"> Document Object Model</span> <br>
+                Definitive Object Model <br>
+                Document Orientation Model</div> <br>
+    
+            <div> - Question (7) A paragraph is inside a div element. You want the paragraph’s click event to be handled first. You should use: <br><br> Handling <br>
+                Capturing <br>
+               <span class="s"> Bubbling</span></div> <br>
+    
+            <div> - Question (8) What is the output of this code?  <br> < div id="test" ><br>  < p >some text< /p ><br> < /div > <br>
+            < script > var el=document.getElementById("test"); alert(el.hasChildNodes()); < /script ><br><br>
+            <br>
+            false <br>
+            undefined <br> <span class="s">true</span></div> <br>
+    
+            <div> - Question (9) What information results from creating a Date Object? <br><br>  The date when the web page was hosted <br>
+                An empty string <br>
+               <span class="s"> The current date and time</span></div> <br>
+    
+             <div> - Question (10) In associative arrays, index numbers are replaced with:<br><br>  functions <br>
+               <span class="s"> strings </span> <br>
+                constants</div> <br>
+    </div>
+</div>
+
+</body>
+</html>

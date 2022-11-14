@@ -1,0 +1,184 @@
+  nav{
+       background-color:#21325E ;
+       display: flex;
+       justify-content: space-between;
+       position: sticky;
+       height: 60px;
+   }
+   #TextLogo{
+       font-size: 35px;
+       color: #FAC710;
+   }
+
+   #NavContents button{
+       font-size: 20px;
+       color: #21325E;
+       background-color:#FAC710;
+       width: 100px;
+       border-radius: 10px;
+       height: 40px;
+       border: #FAC710 3px solid;
+   }
+
+   #NavContents button:hover{
+    background-color: #21325E;
+    color: white;
+   }
+   #HomeIcon{
+       font-size: 30px;
+       color: #FAC710;
+   }
+   #NavContents span:hover{
+    background-color: #FAC710;
+    color: #21325E;
+    padding: 12px;
+   }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+ }
+ #Logo{
+     height: 50px;
+     width: 50px;
+ }
+ #LogoDiv{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 200px;
+     height: 70px;
+ } 
+ #TextLogo{
+     font-size: 35px;
+     color: #FAC710;
+ }
+ #NavContents{
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+     width: 17%;
+     font-size: 20px;
+     color: whitesmoke;
+  } 
+
+ #HomeIcon{
+     font-size: 30px;
+     color: #FAC710;
+ }
+ #NavContents i{
+      display: none;
+      font-size: 50px;
+  }
+ #List{
+     top: 70px;
+     right: 0px;
+     height: 225px;
+     width: 300px;
+     position: absolute;
+     display: none;
+     z-index: 1;
+     border: #FAC710 4px solid;
+     text-align: center;
+ }
+ .Item:active{
+     background-color: #FAC710;
+ }
+ .Item{
+     height: 50px;
+     background-color: #21325E;
+     border: whitesmoke 3px solid;
+ }
+ .footer2{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content:space-around;
+}
+.footer1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #E2DED3;
+}
+.footer2 img{
+    height: 20px;
+    width: 20px;
+}
+.footer2 a {
+    color: black;
+}
+      @media only screen and (max-device-width:950px) {
+         #NavContents span{
+             display: none;
+         }
+         #NavContents button{
+             display: none;
+         }
+         #NavContents i{
+            display: inline;
+
+      }
+      nav{
+         justify-content: space-between;
+         width: 100%;
+      }
+      #NavContents{
+         width: 20%;
+      }
+ 
+  nav{
+       background-color:#21325E ;
+       display: flex;
+       justify-content: space-between;
+       position: sticky;
+   }
+   #TextLogo{
+       font-size: 35px;
+       color: #FAC710;
+   }
+   #NavContents{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       width: 50%;
+       font-size: 25px;
+       color: whitesmoke;
+   }
+   #NavContents button{
+       font-size: 25px;
+       color: whitesmoke;
+       background-color:#21325E;
+       width: 120px;
+       border-radius: 10px;
+       border: whitesmoke 3px solid;
+   }
+   #NavContents button:active{
+       border: #FAC710 solid 3px;
+       border-radius: 10px;
+   }
+   #NavContents span:hover{
+       background-color: #FAC710;
+       height: 100%;
+       width: 20%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   #NavContents span{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 20%;
+   }
+   #HomeIcon{
+       font-size: 30px;
+       color: #FAC710;
+   }
+  .parts span{
+    font-size: 30px;
+   }}

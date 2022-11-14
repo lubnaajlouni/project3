@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a8b56cb52b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+ 
+       .main2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+       }
+       .sections{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+       }
+    
+       .sections div{
+        width: 27%;
+        padding: 2%;
+        text-align: center;
+        border-radius: 10px;
+       }
+       .sec1{
+        background-color: #21325E;
+        color: white;
+       }
+       .sec2{
+        background-color: #FAC710;
+        color: #21325E;
+       }
+       .sec3{
+        background-color: #21325E;
+        color: white;
+       }
+      .section2{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #21325E;
+        color: white;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+      }
+    
+    
+        .btn2{
+            background-color: #FAC710;
+            font-size: large;
+            color:#21325E;
+            width: 250px;
+            height: 70px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .btn:hover{
+            background-color: #21325E;
+            color: white;
+        }
+
+        @media only screen and (min-device-width:0px) and (max-device-width :480px) {
+          
+            .sections{
+                flex-direction: column;
+            }
+            .sections div{width: auto;
+            margin-bottom: 20px;}
+        }
+    </style>
+</head>
+
+<body>
+        <nav>
+            <div id="LogoDiv">
+              <img src="/img/java-script.png" id="Logo"><span id="TextLogo">Master</span>
+            </div>
+            <div id="NavContents">
+                <Button onclick="location.href='/regist/log.html'">Log In</Button>
+                <Button onclick="location.href='/regist/regist.html'">Register</Button>
+                <i class="fas fa-bars" onclick="showlist()"></i>
+                 <div id="List">
+                  <div class="Item">Log In</div>
+                  <div class="Item">log out</div>
+                 </div>
+            </div>
+          </nav>
+    <div>
+    <img src="/img/test2.jpg" alt="" width="100%" height="300px">
+</div>
+
+    <div class= main2>
+        <div class="section2">
+            <p>
+                We are excited to open Registration for the 2022 trials. 
+                All you have to do to make the first step towards a successful digital career is to take this simple multi-part Quiz.
+                </p>
+                <br>
+                <button class="btn2"  onclick="location.href='/regist/log.html'">Start Quiz Now</button>
+        </div>
+        <h1 style="text-align: center;" id="About">About</h1>
+  <div class="sections">
+<div class="sec1"> <h1> Our Company</h1>
+    <p></p>JS master   Academy is, One Of The Biggest Academies In Jordan Teaching JavaScript, we aim to be the No.1  academic institution in the Jordanian digital space.</p></div>
+<div class="sec2"> <h1> Our training</h1>
+    <p></p>To achieve our vision, we offer free training to the most innovative and qualified individuals in the Jordanian workforce, Offering comprehensive and detailed training with an active learning approach.</p></div>
+<div class="sec3"> <h1> Our trainers</h1>
+    <p></p>Our trainers are cherry-picked from the most skilled and professional Web Developers in the Middle East, Adopting an active pedagogy curriculum which makes our trainees work-ready.</p></div>
+</div>
+
+    </div>
+    
+
+    <br>
+    <div class="footer1">
+        <div class="footer2">
+        <div> <a><img src="/img/phone.png"> +96278888888</a></div>
+        <div>  <img src="/img/email.png"> Mail : masterjs@company.com</div>
+        <div> <a style="text-decoration:none ;" href="https://www.linkedin.com/"><img src="/img/linkedin.png"> Masterjs.linkedin</a></div>
+        <div><a style="text-decoration:none ;" href="https://github.com/"><img src="/img/github.png"> Masterjs.github</a></div>
+    </div>
+    </div>
+
+    <script>
+        var flag = true;
+        function showlist() {
+
+            if (flag) {
+                var Burger = document.getElementById("List");
+                Burger.style.display = "block";
+                flag = false;
+            }
+            else {
+                var Burger = document.getElementById("List");
+                Burger.style.display = "none";
+                flag = true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
